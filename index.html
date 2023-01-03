@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <title>Quote Generator</title>
     <!-- Style sheets -->
     <!-- linked after title -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
@@ -15,6 +15,47 @@
 </head>
 <body>
     <!-- <i class="fa-sharp fa-solid fa-user"></i> -->
+    <!-- Think about the structure of the code
+     quote-container
+        quote text
+        author
+        buttons
+            tweet
+            new quote
+    
+    
+    -->
+    <div class="quote-container" id="quotecontainer">
+        <!-- Quote -->
+        <div class="quote-text">
+            <i class="fas fa-quote-left"> 
+                <!-- the fas above is quote symbol font awesome icon  -->
+                
+                <!-- span is used because then this whole text will only take area of the text  -->
+            </i>
+            <span id="quote">Never Apologize for trying hard. It's an insult to your determination.</span>
+        </div>
+        <!-- Author -->
+        <div class="author">
+            <span id="author">Might Dai</span>
+        </div>
+        <!-- Buttons -->
+        <div class="button-container">
+            <!-- adding a container to this allows us to have flex box which is different from the body as we want to keep the buttons as far as possible -->
+            <button class="twitter-button" id="twitter" title="tweet this"> 
+                <i class="fab fa-twitter"></i> 
+                <!-- fab is highly used for business related font awesome icons , here we use twitter icon -->
+            </button>
+            <button  id="new-quote">
+                New Quote
+            </button>
+            <!-- title allows us to add the functionality that when you hower on the button you see the message of title -->
+            
+        </div>
+    </div>
+
+
+    
 
 
     <!-- Scripts -->
